@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Batman</title>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">Octav</h2>
+            <div class="toggle"></div>
+        </header>
+        <video src="Batman.mp4" muted loop autoplay ></video>
+        
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>The Dark Knight</h2>
+            <p>In the name of his murdered parents, Bruce Wayne wages eternal war on the criminals of Gotham City. He is vengeance. He is the night. He is Batman.</p>
+            <a href="backstory.html">More about Batman</a>
+        </div>
+    </section>
+    <div class="menu">
+        <ul>
+          <li><a href="index2.html">Home</a></li>
+          <li><a href="backstory.html">Backstory</a></li>
+          <li><a href="creation.html">Creation</a></li>
+          <li><a href="movies.html">Movies</a></li>
+        </ul>
+    </div>
+
+<script>
+    const menuToggle = document.querySelector('.toggle');
+      const showcase = document.querySelector('.showcase');
+
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+      })
+</script>
+</body>
+</html>

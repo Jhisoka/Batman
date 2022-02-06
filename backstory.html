@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Batman</title>
+</head>
+    <section class="showcase">
+        <header>
+            <h2 class="logo"></h2>
+            <div class="toggle"></div>
+        </header>
+        
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>The story of Batman</h2>
+            <p class="information">Batman's secret identity is Bruce Wayne, a wealthy American industrialist. As a child, Bruce witnessed the murder of his parents, Dr. Thomas Wayne and Martha Wayne, which ultimately led him to craft the Batman persona and seek justice against criminals. He resides on the outskirts of Gotham City in his personal residence, Wayne Manor. Wayne averts suspicion by acting the part of a superficial playboy idly living off his family's fortune and the profits of Wayne Enterprises, his inherited conglomerate. He supports philanthropic causes through his nonprofit Wayne Foundation, which in part addresses social issues encouraging crime as well as assisting victims of it, but is more widely known as a celebrity socialite. In public, he frequently appears in the company of high-status women, which encourages tabloid gossip while feigning near-drunkenness with consuming large quantities of disguised ginger ale since Wayne is actually a strict teetotaler to maintain his physical and mental prowess. Although Bruce Wayne leads an active romantic life, his vigilante activities as Batman account for most of his time.</p>
+        </div>
+    </section>
+    <div class="menu">
+        <ul>
+          <li><a href="index2.html">Home</a></li>
+          <li><a href="backstory.html">Backstory</a></li>
+          <li><a href="creation.html">Creation</a></li>
+          <li><a href="movies.html">Movies</a></li>
+        </ul>
+    </div>
+
+<script>
+    const menuToggle = document.querySelector('.toggle');
+      const showcase = document.querySelector('.showcase');
+
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+      })
+</script>
+
+</body>
+</html>
